@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp/login Page</title>
+    <link rel="stylesheet" href="Login.css">
+   
+</head>
+<body class="body">
+    <header>
+        <nav id="Nav">
+            <div id="logo"><a>LOGO</a></div>
+            <div class="dropdown" style="float:right">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                  <a href="#">Music</a>
+                  <a href="#">Gym & Health Tips</a>
+                  <button type="button" id="button" title="Click to SignIn/SignUp">Login</button>
+                </div>
+              </div>
+              <div id="anchor">
+                <a>Music</a>
+                <a>Gym & Health Tips</a>
+                <a><button type="button" id="butt" title="Click to SignIn/SignUp"><span>Login</span></button></a>
+            </div>
+        </nav>
+    </header>
+<!-- Create Account Divs -->
+    <div class="login-container">
+        <div id="main">
+            <h1>SignIn</h1>
+            <input id="email" type="text" placeholder="email"/>
+            <input id="password" type="password" placeholder="password"/>
+            <button id="submit">Login</button>
+            <p><span>or</span></p>
+            <button id="signUp">SignUp</button>
+        </div>
+        <div id="create-acct">
+            <h1>Create An Account</h1>
+            <input id="email-signup" type="text" placeholder="Email"/>
+            <input id="confirm-email-signup" type="text" placeholder="Confirm Email"/>
+            <input id="password-signup" type="text" placeholder="Password"/>
+            <input id="confirm-password-signup" type="text" placeholder="Confirm Password Email"/>
+            <button id="create-acct-btn">Create Account</button>
+            <button id="return-btn">Return to Login</button>
+        </div>
+
+
+
+
+
+    </div>
+    
+</body>
+<!-- 
+    
+ -->
+ <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth-compat.js"></script>
+  <script type="module" src="Login.js" defer > </script>
+</html>

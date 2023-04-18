@@ -1,0 +1,255 @@
+.body {
+    background :url(/Images/pexels.jpg); 
+    background-size: cover;
+    background-position: center;
+    /* display:flex; */
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+
+}
+
+Nav{
+    position:fixed;
+    top:0%;
+    width:100%;
+    height:auto;
+    padding:0%;
+    margin:0%;
+}
+
+a{
+    padding:15px 15px;
+    }
+
+a:hover{
+    cursor: pointer;
+    color:lightgray;
+}
+
+#anchor{
+    float:right;
+    font-size: 20px;
+    color:#FFFFFF;
+}
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 160px;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: lightgray;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+#button{
+   width:100%;
+    border:none;
+    padding: 10px;
+}
+#button:hover{
+   cursor:pointer;
+   background-color: lightblue;
+ }
+
+#butt{
+    display: inline-block;
+  border-radius: 4px;
+  background:transparent;
+  border: none;
+  color: #FFFFFF; 
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  width: auto;
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#butt span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #butt span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+ 
+
+  #butt:hover span {
+    padding-right: 25px;
+    color:lightgray;
+  }
+  
+  #butt:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+ 
+
+  /* LOGIN */
+
+  h1{
+    margin-bottom:8%;
+    text-align:center;
+    font-family:"fredoka", cursive;
+    color:#01a87e;
+    letter-spacing:0.1em;
+}
+p{
+    margin-top:5%;
+    margin-bottom:5%;
+    width:100%;
+    text-align:center;
+    border-bottom: 1px solid #000;
+    line-height:0.1em
+}
+p span{
+    background:#fff;
+    padding:0 10px;
+}
+
+input{
+    margin-bottom:3%;
+}
+
+input-last-of-type{
+    margin-bottom:0;
+}
+
+input, button {
+    padding:3%;
+    width:100%;
+}
+
+.login-container{
+    background-color: #eaa001;
+    padding:3%;
+    box-shadow:0 4px 8px 0; 
+    box-shadow:rgba(0,0,0,0,2);
+    width:20vw;
+    margin:auto;
+    height:auto;
+    overflow:hidden;
+    /* transition: transform .5s ease, height .2s ease;
+    transition: scale(0); */
+    margin-top:15vh;
+    display:none;
+}
+
+/* .login-container #butt{
+    transition: scale(1);
+} */
+
+#submit, #create-acct-btn{
+    background-color:#01a87e;
+    color:white;
+    border:0;
+    margin-top:5%;
+}
+
+button:hover{
+    cursor:pointer;
+    opacity:0.8;
+    transition:0.3s;
+}
+
+#signUp{
+    border:none;
+    background-color:grey;
+}
+
+#create-acct{
+    display:none;
+}
+#main{
+    display:block;
+}
+
+
+
+#return-btn{
+    background-color:none;
+    color:grey;
+    text-decoration:underline;
+    border:none;
+    margin-top:3%;
+}
+
+#return-btn:hover{
+    color:orange;
+}
+
+#logo{
+    float:left;
+}
+
+
+ #anchor{
+    display:none;
+  }
+
+  @media screen and (min-width:600px) and (max-width:1700px) {
+    #anchor {
+        display:inline-block;
+    }
+     #anchor a {
+        display:inline;
+        padding:15px 15px;
+        }
+    .dropdown{
+        display:none;      
+    }	
+    
+  }

@@ -1,0 +1,406 @@
+body 	{
+background: var(--carribean-green);
+min-height: 100vh;}
+:root{
+    --white-light: rgba(255, 255, 255, 0.5);
+    --alice-blue: #f8f9fa;
+    --carribean-green: #40c9a2;
+    --gray: #ededed;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;}
+.lists__nav {
+    position:fixed;
+	top:0;
+	width:100%;
+    margin:0px;
+    padding:0px;
+	height:auto;
+	display:none;
+}
+
+
+
+a{
+    float:left;
+	
+    }
+/* #right {
+	border-right:none;
+
+}	 */
+a{
+    display:inline;
+	text-decoration:none;
+    color:black;
+    padding: 18px 18px; 
+    text-align: center;
+	font-size:20px;
+    
+}
+
+.lists__nav a:hover {
+			color: #d3d3d3;
+        }
+		
+
+.lists__nav a{
+    font-style: italic;
+}
+
+footer{
+	color:white;
+	height:65px;
+	width:100%;
+	background-color:black;
+	padding:5px;
+	text-align:center;
+	clear:both;
+	position:absolute;
+	top:580px;
+	left:0px;
+}
+header{
+	padding-bottom: 50px;
+}
+
+
+
+
+
+/* THE BUTTON IN THE NAV */
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 160px;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color:none ;
+	color:lightgrey;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+	position:fixed;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+#button{
+   width:100%;
+    border:none;
+    padding: 10px;
+}
+#button:hover{
+   cursor:pointer;
+   background-color: lightblue;
+ }
+
+ /* PRODUCTS DESIGN */
+img{
+	display:block;
+}
+.sm-title{
+	text-transform: capitalize;
+	padding: 0.6em 0;
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+.lg-title{
+    text-align: left;
+}
+
+.container{
+	text-align: center;
+}
+
+/* product section */
+.products{
+	background: var(--alice-blue);
+    background-color: #eaa001; 
+	/* padding: 3.2rem; */
+
+}
+.product{
+	position: relative;
+	margin:2rem;
+}
+.product-content{
+	background: var(gray);
+	padding: 3rem 0.5rem 2rem 0.5rem;
+	cursor:pointer;
+}
+.product-img{
+	background: var(white light);
+	box-shadow: 0 0 20px 10px var(white light);
+	width: 200px;
+	height:200px;
+	margin: auto;
+	transition: background 0.5s ease;
+}
+
+.product-btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.4rem;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+.btn-cart, .btn-buy{
+    background: transparent;
+    border: 1px solid black;
+    padding: 0.8rem 0;
+    width: 125px;
+    font-family: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: all 0.6s ease;
+}
+.btn-cart{
+    background: black;
+    color: white;
+}
+.btn-cart:hover{
+    background: var(--carribean-green);
+}
+.btn-buy{
+    background: white;
+}
+.btn-buy:hover{
+    background: var(--carribean-green);
+    color: #fff;
+}
+.product-info{
+    background: white;
+    /* padding: 2rem; */
+}
+.product-info-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rating span{
+    color: var(--carribean-green);
+}
+.product-name{
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.product-price{
+    padding-top: 0.6rem;
+    padding-right: 0.6rem;
+    display: inline-block;
+}
+.product-price:first-of-type{
+    text-decoration: line-through;
+    color: var(--carribean-green);
+}
+.product-img img{
+    transition: transform 0.6s ease;
+}
+.product:hover .product-img img{
+    transform: scale(1.1);
+}
+
+.product:hover .product-btns{
+    opacity: 1;
+}
+.off-info .sm-title{
+    background: var(--carribean-green);
+    color: white;
+    display: inline-block;
+    padding: 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    z-index: 1;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+
+* product collection */
+.product-collection{
+    padding: 3.2rem 0;
+	
+
+}
+.product-collection-wrapper{
+    padding: 3.2rem 0;
+}
+.product-col-left{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("images/fashion-img-1.jpg") center/cover no-repeat;
+}
+.product-col-r-top{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("images/fashion-img-2.png") center/cover no-repeat;
+}
+.flex{
+    display:flex;
+    justify-content: center;
+    align-items:flex-start;
+    height: 50vh;
+    padding: 2rem 1.5rem 3.2rem;
+    margin: 5px;
+}
+.product-col-r-bottom > div:first-child{
+    background: #eaa001;
+}
+.product-col-r-bottom > div:last-child{
+    background: #0090ff;
+}
+.product-col-content{
+    text-align: center;
+    color: white;
+}
+.product-collection .text-light{
+    opacity: 1;
+    font-size: 0.8;
+    font-weight: 400;
+    line-height: 1.7;
+}
+.btn-dark{
+    background: black;
+    color: white;
+    outline: 0;
+    border-radius: 25px;
+    padding: 0.7rem 1rem;
+    border: 0;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    font-size: 1rem;
+    font-family: inherit;
+}
+.btn-dark:hover{
+    background: var(--carribean-green);
+}
+
+
+
+
+
+
+
+/* Media Queries */
+@media screen and (min-width: 992px){
+    .product-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-col-r-bottom{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1200px){
+    .product-items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .product{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .products .text-light{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1336px){
+    .product-items{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .product-collection-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .flex{
+        height: 70vh;
+		
+    }
+    .product-col-left{
+        height: 141.4vh;
+    }
+}
+
+
+
+
+
+ 
+ 
+
+
+
+	@media screen and (min-width: 600px) and (max-width:1700px)  {
+		.lists__nav {
+			display:block;
+			position:static;
+			width:auto;
+			margin-right:20px;
+            
+			
+		}
+		 .lists__nav a {
+			display:inline;
+				padding:15px 20px;
+			}
+			#right{
+				float: right;
+			}
+		.dropdown {
+			display: none;
+
+		}	
+	/* #product-container{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+	 */
+	
+
+
+} 
+		
